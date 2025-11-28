@@ -19,9 +19,9 @@ export default function Home() {
   };
   
   return (
-    <div className="font-sans min-h-screen bg-gradient-to-br from-amber-50 via-amber-100 to-amber-200">
+    <div className="font-sans min-h-screen">
       {/* 导航栏 */}
-      <header className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+      <header className="bg-white/90 shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -63,7 +63,7 @@ export default function Home() {
               <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-medium text-lg transition-colors">
                 了解更多
               </button>
-              <button className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-8 py-3 rounded-full font-medium text-lg border border-white/30 transition-colors">
+              <button className="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-full font-medium text-lg border border-white/30 transition-colors">
                 虚拟参观
               </button>
             </div>
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
 
       {/* 关于博物馆 */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-white/55">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -118,14 +118,14 @@ export default function Home() {
       </section>
 
       {/* 参观信息 */}
-      <section id="visit" className="py-20 bg-amber-50" style={{ backgroundImage: 'url(/参观信息.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay' }}>
+      <section id="visit" className="py-20 bg-amber-50/55">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
             参观信息
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* 开放时间 */}
-            <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+            <div className="bg-white/90 p-8 rounded-xl shadow-lg">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <span className="text-amber-600 text-2xl">⏰</span>
               </div>
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
 
             {/* 预约方式 */}
-            <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+            <div className="bg-white/90 p-8 rounded-xl shadow-lg">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <span className="text-amber-600 text-2xl">📱</span>
               </div>
@@ -173,7 +173,7 @@ export default function Home() {
             </div>
 
             {/* 参观须知 */}
-            <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+            <div className="bg-white/90 p-8 rounded-xl shadow-lg">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <span className="text-amber-600 text-2xl">📋</span>
               </div>
@@ -198,7 +198,7 @@ export default function Home() {
       </section>
 
       {/* 陶瓷展区 */}
-      <section id="exhibitions" className="py-20 bg-white">
+      <section id="exhibitions" className="py-20 bg-white/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
             陶瓷展区
@@ -323,7 +323,7 @@ export default function Home() {
 
       {/* 虚拟展区弹窗 */}
       {activeVirtualExhibition && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             {/* 关闭按钮 */}
             <button 
@@ -444,7 +444,7 @@ export default function Home() {
       
       {/* 中国陶瓷历史窗口 */}
       {showCeramicHistory && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             {/* 关闭按钮 */}
             <button 
@@ -528,7 +528,7 @@ export default function Home() {
       )}
 
       {/* 联系方式 */}
-      <section id="contact" className="py-20 bg-amber-50">
+      <section id="contact" className="py-20 bg-amber-50/55">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>

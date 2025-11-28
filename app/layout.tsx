@@ -25,9 +25,47 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
+        style={{
+          minHeight: '100vh',
+          margin: 0,
+          padding: 0
+        }}
       >
-        {children}
+        {/* 底层黄色背景 */}
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'rgba(255, 251, 240, 0.9)',
+          zIndex: -2
+        }}></div>
+        
+        {/* 青花瓷背景图层 - 在黄色背景之上 */}
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundImage: 'url(/qinghuaci.png)',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          zIndex: -1,
+          opacity: 0.9
+        }}></div>
+        
+        {/* 内容容器 - 透明背景，让背景图可见 */}
+        <div style={{
+          position: 'relative',
+          minHeight: '100vh',
+          padding: 0
+        }}>
+          {children}
+        </div>
       </body>
     </html>
   );
