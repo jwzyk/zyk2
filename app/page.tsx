@@ -70,7 +70,7 @@ export default function Home() {
           </div>
         </div>
         {/* 背景图片 */}
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/景德镇中国陶瓷博物馆.png)' }}></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-85" style={{ backgroundImage: 'url(/景德镇中国陶瓷博物馆.png)' }}></div>
       </section>
 
       {/* 关于博物馆 */}
@@ -337,9 +337,7 @@ export default function Home() {
             {activeVirtualExhibition === 'virtual-ancient' && (
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">古代陶瓷虚拟展区</h2>
-                <div className="aspect-video bg-cover bg-center rounded-xl mb-6 flex items-center justify-center" style={{ backgroundImage: 'url(/古代陶瓷展区.png)' }}>
-                  <span className="text-white font-medium text-xl bg-black/30 px-4 py-2 rounded-lg">古代陶瓷虚拟展区全景展示</span>
-                </div>
+                <div className="aspect-video bg-cover bg-center rounded-xl mb-6" style={{ backgroundImage: 'url(/古代陶瓷展区.png)' }}></div>
                 <p className="text-gray-600 mb-4">
                   欢迎来到古代陶瓷虚拟展区！在这里，您可以360度全方位欣赏从新石器时代到明清时期的陶瓷珍品，包括仰韶文化彩陶、唐三彩、宋五大名窑等代表性作品。
                 </p>
@@ -353,9 +351,7 @@ export default function Home() {
             {activeVirtualExhibition === 'virtual-jingdezhen' && (
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">景德镇窑虚拟展区</h2>
-                <div className="aspect-video bg-cover bg-center rounded-xl mb-6 flex items-center justify-center" style={{ backgroundImage: 'url(/景德镇窑展区.png)' }}>
-                  <span className="text-white font-medium text-xl bg-black/30 px-4 py-2 rounded-lg">景德镇窑虚拟展区全景展示</span>
-                </div>
+                <div className="aspect-video bg-cover bg-center rounded-xl mb-6" style={{ backgroundImage: 'url(/景德镇窑展区.png)' }}></div>
                 <p className="text-gray-600 mb-4">
                   欢迎来到景德镇窑虚拟展区！在这里，您可以了解景德镇窑从元代到现代的发展历程，欣赏元青花、明五彩、清粉彩等经典瓷器。
                 </p>
@@ -369,9 +365,7 @@ export default function Home() {
             {activeVirtualExhibition === 'virtual-famous-kilns' && (
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">五大名窑虚拟展区</h2>
-                <div className="aspect-video bg-cover bg-center rounded-xl mb-6 flex items-center justify-center" style={{ backgroundImage: 'url(/五大名窑展区.png)' }}>
-                  <span className="text-white font-medium text-xl bg-black/30 px-4 py-2 rounded-lg">五大名窑虚拟展区全景展示</span>
-                </div>
+                <div className="aspect-video bg-cover bg-center rounded-xl mb-6" style={{ backgroundImage: 'url(/五大名窑展区.png)' }}></div>
                 <p className="text-gray-600 mb-4">
                   欢迎来到五大名窑虚拟展区！在这里，您可以集中欣赏宋代汝窑、官窑、哥窑、定窑、钧窑五大名窑的精品瓷器，感受宋代陶瓷艺术的巅峰成就。
                 </p>
@@ -385,9 +379,7 @@ export default function Home() {
             {activeVirtualExhibition === 'virtual-modern' && (
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">现代陶瓷艺术虚拟展区</h2>
-                <div className="aspect-video bg-cover bg-center rounded-xl mb-6 flex items-center justify-center" style={{ backgroundImage: 'url(/现代陶瓷艺术展区.png)' }}>
-                  <span className="text-white font-medium text-xl bg-black/30 px-4 py-2 rounded-lg">现代陶瓷艺术虚拟展区全景展示</span>
-                </div>
+                <div className="aspect-video bg-cover bg-center rounded-xl mb-6" style={{ backgroundImage: 'url(/现代陶瓷艺术展区.png)' }}></div>
                 <p className="text-gray-600 mb-4">
                   欢迎来到现代陶瓷艺术虚拟展区！在这里，您可以欣赏当代陶瓷艺术家的创新作品，感受传统工艺与现代设计理念的完美融合。
                 </p>
@@ -401,9 +393,7 @@ export default function Home() {
             {activeVirtualExhibition === 'virtual-export' && (
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">外销瓷虚拟展区</h2>
-                <div className="aspect-video bg-cover bg-center rounded-xl mb-6 flex items-center justify-center" style={{ backgroundImage: 'url(/外销瓷展区.png)' }}>
-                  <span className="text-white font-medium text-xl bg-black/30 px-4 py-2 rounded-lg">外销瓷虚拟展区全景展示</span>
-                </div>
+                <div className="aspect-video bg-cover bg-center rounded-xl mb-6" style={{ backgroundImage: 'url(/外销瓷展区.png)' }}></div>
                 <p className="text-gray-600 mb-4">
                   欢迎来到外销瓷虚拟展区！在这里，您可以了解明清时期中国陶瓷外销到欧洲、东南亚等地的历史，欣赏具有异域风格的外销瓷珍品。
                 </p>
@@ -417,9 +407,7 @@ export default function Home() {
             {activeVirtualExhibition === 'virtual-craft' && (
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">陶瓷工艺虚拟展示区</h2>
-                <div className="aspect-video bg-cover bg-center rounded-xl mb-6 flex items-center justify-center" style={{ backgroundImage: 'url(/陶瓷工艺展示区.png)' }}>
-                  <span className="text-white font-medium text-xl bg-black/30 px-4 py-2 rounded-lg">陶瓷工艺虚拟展示区</span>
-                </div>
+                <div className="aspect-video bg-cover bg-center rounded-xl mb-6" style={{ backgroundImage: 'url(/陶瓷工艺展示区.png)' }}></div>
                 <p className="text-gray-600 mb-4">
                   欢迎来到陶瓷工艺虚拟展示区！在这里，您可以全程观看陶瓷制作的完整工艺流程，从原料制备、成型、装饰到烧制，深入了解陶瓷的制作奥秘。
                 </p>
@@ -630,7 +618,7 @@ export default function Home() {
       </section>
 
       {/* 页脚 */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-900/70 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
